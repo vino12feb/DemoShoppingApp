@@ -31,52 +31,53 @@ Tech Stacks
 * TestNG
 * Extent Report
 
-Framework Structure
 
+Framework Structure
 .
 |---src
 |   |---main
 |       |---java
-|           |---automation
-|				|---SeleniumFunctions.java		- Java funtions for selenium related operations
-|			|---runner
-|				|---RunDemoTest.java			- Java runner class for execution
-|			|---utilities
-|				|---ConfigFileReader.java       - Java functions to read the configuration file
-|				|---DataHandler.java			- Java functions to handle test data in runtime
-|				|---FileHandler.java			- Java functions to perform file operations
-|				|---ReportHandler.java			- Java functions for handling reports
-|			|---Run.xml							- Test NG xml for triggering the runner class
+|		|---automation
+|			|---SeleniumFunctions.java  - Java functions for selenium related operations
+|		|---runner
+|			|---RunDemoTest.java	  - Java runner class for execution
+|		|---utilities
+|			|---ConfigFileReader.java	  - Java functions to read the configuration file
+|			|---DataHandler.java	  - Java functions to handle test data in runtime
+|			|---FileHandler.java	  - Java functions to perform file operations
+|			|---ReportHandler.java	  - Java functions for handling reports
+|			|---Run.xml		  - Test NG xml for triggering the runner class
 |
 |---src
-|	|---test
-|		|---java
-|			|---application
-|				|---WishlistFunctions.java		- Java business functions specific to wishlist
-|			|---data
-|				|---Testdata.java				- Test data enum variables
-|			|---features
-|				|---Wishlist.features			- Cucumber feature file for wishlist feature
-|			|---objects
-|				|---Cart.java					- Cart Page Objects
-|				|---Header.java					- Header Objects
-|				|---Home.java					- Home Page Objects
-|				|---Wishlist.java				- Wishlist Page Objects
-|			|---steps
-|				|---WishlistSteps.java			- Step definitions for wishlist features
+|   |---test
+|	|---java
+|		|---application
+|			|---WishlistFunctions.java  - Java business functions specific to wishlist
+|		|---data
+|			|---Testdata.java		  - Test data enum variables
+|		|---features
+|			|---Wishlist.features	  - Cucumber feature file for wishlist feature
+|		|---objects
+|			|---Cart.java		- Cart Page Objects
+|			|---Header.java		- Header Objects
+|			|---Home.java		- Home Page Objects
+|			|---Wishlist.java		- Wishlist Page Objects
+|		|---steps
+|			|---WishlistSteps.java	- Step definitions for wishlist features
 |
 |---configs
-|	|---configuration.properties				- Property file to refer global configurations
-|	|---extent-config.xml						- Property file for Extent reports
+|	|---configuration.properties		- Property file to refer global configurations
+|	|---extent-config.xml			- Property file for Extent reports
 |
-|---reports										- Report directory for custom reports
+|---reports					- Report directory for custom reports
 |
 |---resouces
-|	|---chromedriver.exe						- Chrome driver for execution
+|	|---chromedriver.exe			- Chrome driver for execution
 |
-|---target										- Default output directory for Maven
+|---target					- Default output directory for Maven
 |
-|---pom.xml										- XML file that contains information about the project and configuration details
+|---pom.xml		- XML file that contains information about the project and configuration details
+
 
 Steps To Execute
 
@@ -92,6 +93,7 @@ Steps To Execute
 
 
 Key Customization
+
 * Report output path can be configured in configuration.properties file
 * Timeout seconds can be configured in configuration.properties file
 * Extent report theme can be customized in extent-config.xml file
