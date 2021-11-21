@@ -1,0 +1,7 @@
+data\Testdata.class
+objects\Cart.class
+application\WishlistFunctions.class
+steps\WishlistSteps.class
+objects\Header.class
+objects\Home.class
+objects\Wishlist.class

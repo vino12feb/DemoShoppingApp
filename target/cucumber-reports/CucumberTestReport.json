@@ -1,0 +1,153 @@
+[
+  {
+    "line": 5,
+    "elements": [
+      {
+        "line": 7,
+        "name": "",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 3605517400,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "I navigate to demo shopping application shop page",
+            "match": {
+              "location": "WishlistSteps.iNavigateToDemoShoppingApplicationShopPage()"
+            },
+            "keyword": "Given "
+          }
+        ]
+      },
+      {
+        "before": [
+          {
+            "result": {
+              "duration": 8016200,
+              "status": "passed"
+            },
+            "match": {
+              "location": "WishlistSteps.beforeHook(Scenario)"
+            }
+          }
+        ],
+        "line": 19,
+        "name": "Add multiple items in a wishlist and move lowest price item to cart",
+        "description": "",
+        "id": "testing-a-wishlist-feature;add-multiple-items-in-a-wishlist-and-move-lowest-price-item-to-cart;;2",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 9152247800,
+              "status": "passed"
+            },
+            "line": 11,
+            "name": "I add 4 different products to my Wishlist",
+            "match": {
+              "arguments": [
+                {
+                  "val": "4",
+                  "offset": 6
+                }
+              ],
+              "location": "WishlistSteps.iAddDifferentProductsToMyWishlist(int)"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 410176400,
+              "status": "passed"
+            },
+            "line": 12,
+            "name": "I view my wishlist table",
+            "match": {
+              "location": "WishlistSteps.iViewMyWishlistTable()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 238827200,
+              "status": "passed"
+            },
+            "line": 13,
+            "name": "I find total 4 selected items in my Wishlist",
+            "match": {
+              "arguments": [
+                {
+                  "val": "4",
+                  "offset": 13
+                }
+              ],
+              "location": "WishlistSteps.iFindTotalSelectedItemsInMyWishlist(int)"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 1340045300,
+              "status": "passed"
+            },
+            "line": 14,
+            "name": "I search for lowest price product",
+            "match": {
+              "location": "WishlistSteps.iSearchForLowestPriceProduct()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 502450400,
+              "status": "passed"
+            },
+            "line": 15,
+            "name": "I am able to add the lowest price item to my cart",
+            "match": {
+              "location": "WishlistSteps.iAmAbleToAddTheLowestPriceItemToMyCart()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 664547100,
+              "status": "passed"
+            },
+            "line": 16,
+            "name": "I am able to verify the item in my cart",
+            "match": {
+              "location": "WishlistSteps.iAmAbleToVerifyTheItemInMyCart()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@WISHLIST"
+          }
+        ]
+      }
+    ],
+    "name": "Testing a wishlist feature",
+    "description": "",
+    "id": "testing-a-wishlist-feature",
+    "keyword": "Feature",
+    "uri": "src/test/java/features/Wishlist.feature",
+    "tags": [
+      {
+        "name": "@WISHLIST",
+        "type": "Tag",
+        "location": {
+          "line": 4,
+          "column": 1
+        }
+      }
+    ]
+  }
+]

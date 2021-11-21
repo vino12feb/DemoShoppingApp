@@ -1,0 +1,6 @@
+automation\SeleniumFunctions.class
+runner\RunDemoTest.class
+utilities\ReportHandler.class
+utilities\ConfigFileReader.class
+utilities\DataHandler.class
+utilities\FileHandler.class
